@@ -1,0 +1,22 @@
+proxy:
+  host:
+  port:
+connection:
+  timeout: 100
+read:
+  timeout: 300
+bpdts-test-app:
+  url: https://bpdts-test-app.herokuapp.com
+  city-users:
+    endpoint: ${bpdts-test-app.url}/city/{cityname}/users
+  users:
+    endpoint: ${bpdts-test-app.url}/users
+  user:
+    endpoint: ${bpdts-test-app.url}/user/{userid}
+city:
+  latitude: 51.507351
+  longitude: -0.127758
+
+logging:
+  level:
+    root: DEBUG

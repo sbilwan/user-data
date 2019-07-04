@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "a3af527d-1d1a-49eb-8ccd-4fe2de33d610",
+		"name": "UserData",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Request to fetch that are either listed living in London or co-ordinates within 50 miles of london",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/api.userdata/v1/users/city/London/50",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api.userdata",
+						"v1",
+						"users",
+						"city",
+						"London",
+						"50"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InstructionsEndpoint to get all the operations supported by the API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/api.userdata/v1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api.userdata",
+						"v1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
