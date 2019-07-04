@@ -38,7 +38,7 @@ public class FetchAllUsersInAndNearCityService {
                 .map(CompletableFuture::join)
                 .map(mergedUsers::addAll)
                 .count();
-        LOGGER.info("Number of users after merging is {}" , count);
+        LOGGER.debug("Number of users after merging is {}" , count);
         return mergedUsers;
     }
 
