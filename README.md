@@ -11,7 +11,7 @@ Lombok is to avoid writing boilerplate code.
 #Implementation 
 1. To get the users listed in London it is simple to get all the users in London by using endpoint `https://bpdts-test-app.herokuapp.com/city/London/users`
 
-2. To get the users whose coordiantes are within 50 miles range, first fetch all the users using endpoint `https://bpdts-test-app.herokuapp.com/users` then calculate their coordinates distance from London coordinates by 
+2. To get the users whose coordinates are within 50 miles range, first fetch all the users using endpoint `https://bpdts-test-app.herokuapp.com/users` then calculate their coordinates distance from London coordinates by 
 using Haversine formula and choose only those users that are closer within the 50 miles range.
 
 3. CompletableFuture is being used that calls the above two endpoints in parallel and then combine the results from both the operations and present the final list to the caller.
